@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Filtro de imagen</title>
+    <style>
+      /*.imagen {
+        filter: saturate(50%);
+      }*/
+/*      body{
+  height:100vh;
+  background-color: #101010;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial;
+  color:White;
+  font-size:min(30px, max(3.75vw, 25px));
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}*/
+
+
+body{
+  margin: 0px;
+}
+
+/* Contenedor para centrar */
+.ContainerCenter{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+   color:White;
+  font-size:40px;
+  text-align: center;
+}
+/* Input */
+input{display: none}
+
+
+
+/* Slider */
+.Carrusels{
+  height: 500px;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+.Carrusel{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  overflow-y: hidden;
+  transition: all .5s ease;
+}
+/* Configuracion de elementos individuales */
+.Carrusels .Carrusel:nth-child(1) {background-image: url(./maquetacion/assets/image/carrusel-1.jpg);}
+.Carrusels .Carrusel:nth-child(2) {background-image: url(./maquetacion/assets/image/carrusel-2.jpeg);}
+.Carrusels .Carrusel:nth-child(3) {background-image: url(./maquetacion/assets/image/carrusel-3.jpeg);}
+/* Estado 1 */
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(0%, 0);}
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(100%, 0);}
+#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(200%, 0);}
+/* Estado 2 */
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-100%, 0);}
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(0%, 0);}
+#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(100%, 0);}
+/* Estado 3 */
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-200%, 0);}
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(-100%, 0);}
+#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(0%, 0);}
+
+
+/* Flechas */
+.Carrusels .ArrowLeft, .Carrusels .ArrowRight{
+  position: absolute;
+  height: 100%;
+  width: 2em;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  user-select: none;
+  cursor: pointer;
+}
+.Carrusels .ArrowLeft{left: 0px;}
+.Carrusels .ArrowRight{right: 0px;}
+/* Configuracion de flechas individuales */
+#Slider1:checked ~ .Carrusels .Arrow1{display: flex;}
+#Slider2:checked ~ .Carrusels .Arrow2{display: flex;}
+#Slider3:checked ~ .Carrusels .Arrow3{display: flex;}
+
+
+    </style>
+  </head>
+  <body>
+    <!-- <img class="imagen" src="https://www.example.com/imagen_escolar.jpg" alt="Imagen escolar"> -->
+    <div class="ContainerCenter">
+
+  <input type="radio" name="Carrusel" id="Slider1" checked>
+  <input type="radio" name="Carrusel" id="Slider2">
+  <input type="radio" name="Carrusel" id="Slider3">
+
+  
+  <div class="Carrusels">
+    <!-- Imagen contenido -->
+    <div class="Carrusel"></div> 
+    <div class="Carrusel"></div>
+    <div class="Carrusel"></div>
+    
+    <!-- Flechas a la izquierda por cada imagen -->
+    <label for="Slider3" class="ArrowLeft Arrow1">❮</label>
+    <label for="Slider1" class="ArrowLeft Arrow2">❮</label>
+    <label for="Slider2" class="ArrowLeft Arrow3">❮</label>
+  
+    <!-- Flechas a la derecha por cada imagen -->
+    <label for="Slider2" class="ArrowRight Arrow1">❯</label> 
+    <label for="Slider3" class="ArrowRight Arrow2">❯</label>
+    <label for="Slider1" class="ArrowRight Arrow3">❯</label>
+  </div>
+  
+
+</div>
+  </body>
+</html>
