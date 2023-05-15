@@ -3,108 +3,179 @@
   <head>
     <title>Filtro de imagen</title>
     <style>
- 
+/**{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
- 
 body{
-  margin: 0px;
+  text-align:center;
+  background-color:beige;
+  font-family: 'Poppins', sans-serif;
+
+}*/
+
+.container{
+  margin:3em auto;
+  width:75%;
+  border:solid white 5px;
+  border-radius:30px;
+  box-shadow:5px 5px 25px rgba(0,0,0, .5);
+  overflow:hidden;
+
 }
 
-/* Contenedor para centrar */
-.ContainerCenter{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-   color:White;
-  font-size:40px;
-  text-align: center;
+  .thumbnail{
+    display:flex;
+    flex-wrap:wrap;
+  }
+    
+    .thumb{
+      height:200px;
+      width:200px;
+      transition:all .2s;
+      object-fit:cover;
+      cursor:pointer;
+    }
+
+      .thumb:hover{
+        box-shadow: 3px 3px 20px ;
+        opacity:.8;
+      }
+
+
+  .desc{  
+    position:relative;
+    width:100%;
+    height:500px;
+    overflow:hidden;
+  }
+   
+    .desc:hover .judul{
+      transform:translateY(80px);
+    }
+    
+    .desc:hover .tittle{
+       background: linear-gradient(180deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.3) 30%,rgba(0,0,0,.3) 70%, rgba(0,0,0,.8) 100%);
+      opacity:1;
+    }
+    
+    .desc:hover .text{
+      transform:translateY(-150px);
+    }
+    .prev{
+        object-fit:cover;
+        width:100%;
+        height:100%;
+    }
+    .tittle{
+      margin:auto;
+      overflow:hidden;
+      width:100%;
+      height:100%;
+      position:absolute;
+      transition:all .3s ease;
+      opacity:0;
+      display:flex;
+      flex-direction:column;
+    }
+
+      .judul{
+        color:white;
+        padding:20px;
+        margin-top:-40px;
+        transition:all .3s ease;
+        
+      }
+      
+      .text{
+        color:white;
+        margin-top:500px;
+        padding:20px;
+        transition:all .35s ease .4s ;
+      }
+
+
+@keyframes fade {
+  to {
+    opacity:1;
+  }
 }
-/* Input */
-input{display: none}
 
-
-
-/* Slider */
-.Carrusels{
-  height: 500px;
-  width: 100%;
-  position: relative;
-  overflow-x: hidden;
+.effect {
+  opacity:0;
+  animation: fade .2s forwards;
 }
-.Carrusel{
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-size: cover;
-  overflow-y: hidden;
-  transition: all .5s ease;
+
+.active{
+  opacity:.5;
 }
-/* Configuracion de elementos individuales */
-.Carrusels .Carrusel:nth-child(1) {background-image: url(./maquetacion/assets/image/carrusel-1.jpg);}
-.Carrusels .Carrusel:nth-child(2) {background-image: url(./maquetacion/assets/image/carrusel-2.jpeg);}
-.Carrusels .Carrusel:nth-child(3) {background-image: url(./maquetacion/assets/image/carrusel-3.jpeg);}
-/* Estado 1 */
-#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(0%, 0);}
-#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(100%, 0);}
-#Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(200%, 0);}
-/* Estado 2 */
-#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-100%, 0);}
-#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(0%, 0);}
-#Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(100%, 0);}
-/* Estado 3 */
-#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-200%, 0);}
-#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(-100%, 0);}
-#Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(0%, 0);}
-
-
-/* Flechas */
-.Carrusels .ArrowLeft, .Carrusels .ArrowRight{
-  position: absolute;
-  height: 100%;
-  width: 2em;
-  align-items: center;
-  justify-content: center;
-  display: none;
-  user-select: none;
-  cursor: pointer;
-}
-.Carrusels .ArrowLeft{left: 0px;}
-.Carrusels .ArrowRight{right: 0px;}
-/* Configuracion de flechas individuales */
-#Slider1:checked ~ .Carrusels .Arrow1{display: flex;}
-#Slider2:checked ~ .Carrusels .Arrow2{display: flex;}
-#Slider3:checked ~ .Carrusels .Arrow3{display: flex;}
-
-
     </style>
+
+
   </head>
   <body>
-    <!-- <img class="imagen" src="https://www.example.com/imagen_escolar.jpg" alt="Imagen escolar"> -->
-    <div class="ContainerCenter">
-
-  <input type="radio" name="Carrusel" id="Slider1" checked>
-  <input type="radio" name="Carrusel" id="Slider2">
-  <input type="radio" name="Carrusel" id="Slider3">
-
+<div class ="container">
   
-  <div class="Carrusels">
-    <!-- Imagen contenido -->
-    <div class="Carrusel"></div> 
-    <div class="Carrusel"></div>
-    <div class="Carrusel"></div>
+  <div class="desc">
+    <div class="tittle">
+      <h1 class="judul">This is galery</h1>
+      <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+    </div>
     
-    <!-- Flechas a la izquierda por cada imagen -->
-    <label for="Slider3" class="ArrowLeft Arrow1">❮</label>
-    <label for="Slider1" class="ArrowLeft Arrow2">❮</label>
-    <label for="Slider2" class="ArrowLeft Arrow3">❮</label>
-  
-    <!-- Flechas a la derecha por cada imagen -->
-    <label for="Slider2" class="ArrowRight Arrow1">❯</label> 
-    <label for="Slider3" class="ArrowRight Arrow2">❯</label>
-    <label for="Slider1" class="ArrowRight Arrow3">❯</label>
+    <div class="imgsrc">
+       <img src="./assets/image/carrusel-1.jpg" class="prev">
+    </div>
   </div>
   
+  <div class="thumbnail">
 
+    <img src="./assets/image/carrusel-1.jpg" class="thumb">
+    
+    <img src="https://images.unsplash.com/photo-1512895356176-c49e710676ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="thumb">
+    
+    <img src="https://images.unsplash.com/photo-1518731683836-4e9cce00ba49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="thumb">
+    
+    <img src="https://images.unsplash.com/photo-1554205163-2b386a29d718?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+     class="thumb">
+    
+    <img src="https://images.unsplash.com/photo-1449480881392-716d0ea24a47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="thumb">
+    
+    <img src="https://images.unsplash.com/photo-1523539693385-e5e891eb4465?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="thumb">
+    
+  </div>
 </div>
+
+
+
+
+<script type="text/javascript">
+  const container = document.querySelector('.container');
+const preview = document.querySelector('.prev')
+const active = document.querySelectorAll('.thumb');
+
+
+container.addEventListener('click', function(e){
+  
+  if( e.target.className == 'thumb' ){
+    preview.src= e.target.src;
+    preview.classList.add('effect');
+    
+    setTimeout(function(){
+      preview.classList.remove('effect');
+    }, 100)
+    
+    active.forEach(function(thumb){
+      if (thumb.classList.contains('active')){
+        thumb.classList.remove('active');
+      }
+    });
+    
+    e.target.classList.add('active');
+  }
+  
+});
+</script>
   </body>
 </html>
