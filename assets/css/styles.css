@@ -755,25 +755,26 @@ svg circle {
     color: #03e9f4;
     font-size: 12px;
   }
-  
-  .login-box form a {
+
+  .button-form{
     position: relative;
     display: inline-block;
     padding: 10px 20px;
     color: #03e9f4;
+    background: #000614;
     font-size: 16px;
-    text-decoration: none;
+
     text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
     margin-top: 40px;
-    letter-spacing: 4px
-  }
-  
-  .login-box a:hover {
-    background: rgb(22, 74, 134);
-    color: #fff;
+    letter-spacing: 4px;
     border-radius: 5px;
+  }
+
+  .button-form:hover{
+    color: #fff;
+    cursor: pointer;
     transition:all .8s ease;
 }
 
