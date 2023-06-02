@@ -27,6 +27,11 @@ body{
     font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+img{
+  width: 100%;
+  height: 100%;
+}
+
 header{
     width: 100%;
     background: white;
@@ -252,6 +257,7 @@ border-bottom:5px solid rgb(2, 73, 139);
   font-size: 50px;
   text-align: center;
   margin: 0px;
+  margin-bottom: 15px;
   padding: 0px;
   font-family: 'Nocturno Display';
   color: #012441;
@@ -618,7 +624,7 @@ svg circle {
     
     .thumb{
       height:200px;
-      width:202px;
+      width:20%;
       transition:all .2s;
       object-fit:cover;
       cursor:pointer;
@@ -633,7 +639,7 @@ svg circle {
   .desc{  
     position:relative;
     width:100%;
-    height:500px;
+    height:550px;
     overflow:hidden;
   }
    
@@ -888,9 +894,9 @@ svg circle {
 	border-radius: 20px;
 	background-color: #fff;
 	box-shadow: 0 0 10px 10px #ccc;
-	padding: 20px;
+	padding: 40px;
   margin: 0px;
-  margin-right: 40px;
+  margin-left: 40px;
   width: 40%;
   float: left;
 }
@@ -906,7 +912,7 @@ svg circle {
 	row-gap: 1rem;
 	padding: 20px;
 	text-align: center;
-	width: 100%;
+	/* width: 100%; */
 	font-size: 1.2rem;
 }
 .calender-day {
@@ -917,7 +923,7 @@ svg circle {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #999898;
+	color: #605d5d;
 	cursor: pointer;
 	transition: background-color 0.5s;
 }
@@ -1171,7 +1177,26 @@ svg circle {
       width: 70%;
     }
 
+    /* calendario */
+    #calendario{
+      width: 90%;
+    }
+
+    .date{
+      width: 50%;
+    }
+
+    .date p{
+      font-size: 1.1rem;
+    }
+
 }
+
+@media(max-width:964px){
+  .desc{
+    height: 40%;
+  }
+  }
 
 @media(max-width:906px){
   #logo{
@@ -1185,6 +1210,11 @@ svg circle {
   /* footer */
   .contactanos{
     width: 90%;
+  }
+
+  /* galeria */
+  .thumb {
+    height: 150px;
   }
 }
 
@@ -1291,6 +1321,17 @@ background: #aaccff;
         grid-gap:30px;
         padding: 35px 0px;
     }
+
+  /* calendario */
+  .date h2 {
+    font-size: 1.5rem;
+  }
+  .date h2:nth-of-type(1) {
+    margin-top: 30px;
+  }
+  .date p {
+    font-size: 1rem;
+  }
 }
 
 @media(max-width: 756px){
@@ -1298,6 +1339,46 @@ background: #aaccff;
   /* contenido */
   .subtitle{
     font-size: 20px;
+  }
+
+/* menu */
+
+#menu a{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+
+  /* calendario */
+  #calendario {
+    width: 80%;
+    display: inline-block;
+  }
+
+  .calender{
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+  .date {
+    width: 100%;
+  }
+
+  /* galeria */
+  .container {
+    width: 85%;
+  }
+
+}
+
+@media(max-width: 650px){
+  .title2 {
+    font-size: 40px;
+  }
+
+  .img-noticias {
+    width: 400px;
   }
 }
 
@@ -1329,16 +1410,82 @@ background: #aaccff;
     #menu a{
       padding-top: 18px;
       padding-bottom: 18px;
-      padding-left: 150px;
-      padding-right: 150px;
+      padding-left: 140px;
+      padding-right: 140px;
     }
 
+    /* contenido */
+    .subtitle-noticias {
+      font-size: 1.3rem;
+    }
+
+    /* carrusel */
+    .Carrusels {
+      height: 300px;
+    }
+
+    /* calendario */
+    .calender {
+      width: 90%;
+      padding: 10px;
+      padding-top: 30px;
+      margin-left: 0px;
+    }
+
+    .calender-day{
+      width: 40px;
+      height: 30px;
+    }
+
+/* galeria */
+.thumb {
+  width: 25%;
+}
+}
+@media(max-width: 500px){
+
+  .img-noticias {
+    width: 300px;
+  }
+}
+
+@media(max-width:450px) {
+  #menu a{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+
+  .title2 {
+    font-size: 30px;
+  }
+
+  /* galeria */
+  .thumb {
+    width: 33%;
+  }
+
+  /* login */
+  .login-box {
+    width: 90%;
+    padding: 30px;
+  }
 }
 
 @media(max-width:372px){
-  
-    .btn-white{
-        padding: 5px;
-        font-size: 14px;
-     }
+
+     .img-noticias {
+      width: 250px;
+    }
+
+     /* menu */
+     #menu a{
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    /* galeria */
+    .thumb {
+      height: 100px;
+    }
 }
