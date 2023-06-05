@@ -425,7 +425,7 @@ border-bottom:5px solid rgb(2, 73, 139);
 
 
 
-.btn {
+.btn-success {
     display: block;
     background: rgb(161, 152, 243);
     color: aliceblue;
@@ -705,6 +705,7 @@ svg circle {
 
 /*Login*/
 
+
 .login-box {
     position: relative;
     width: 400px;
@@ -718,20 +719,35 @@ svg circle {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 30px;
+    padding-bottom: 30px;
   }
   
-  .login-box h2 {
+  .register {
+    position: relative;
+    background: #0d172c;
+    visibility: hidden;
+    transform: translateY(-110%);
+    /*transition: all 600ms ease-out;
+    */padding-bottom: 50px;
+
+}
+
+.show-register{
+  visibility: visible;
+}
+
+  .mb-2 {
     margin: 0 0 30px;
     padding: 0;
     color: #fff;
     text-align: center;
   }
   
-  .login-box .user-box {
+  .user-box {
     position: relative;
   }
   
-  .login-box .user-box input {
+  .user-box input {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
@@ -743,7 +759,7 @@ svg circle {
     background: transparent;
 
 }
-  .login-box .user-box label {
+   .user-box label {
     position: absolute;
     top:0;
     left: 0;
@@ -754,8 +770,8 @@ svg circle {
     transition: .5s;
   }
   
-  .login-box .user-box input:focus ~ label,
-  .login-box .user-box input:valid ~ label {
+  .user-box input:focus ~ label,
+  .user-box input:valid ~ label {
     top: -20px;
     left: 0;
     color: #03e9f4;
@@ -773,9 +789,14 @@ svg circle {
     text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
-    margin-top: 40px;
+    margin-top: 20px;
     letter-spacing: 4px;
     border-radius: 5px;
+    border-color: #ffffff;
+  }
+  .button-register{
+    margin-top: 40px;
+    background: #0d172c;
   }
 
   .button-form:hover{
@@ -784,6 +805,18 @@ svg circle {
     transition:all .8s ease;
 }
 
+.message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 15px;
+  transition:.5s;
+
+}
+
+.message:hover{
+  color: #4faab6;
+  cursor: pointer;
+}
 
 /* DIAGNOSTICO */
 
@@ -1040,58 +1073,89 @@ svg circle {
   background-color: #edf7f8;
 }
 
-.table tr:hover{
+.table tr:hover,.table tr:hover td{
   background-color: #ADD8E6;
   color: black;
+
 }
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 1200px) {
+  .table-users {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1030px) {
   .table, tr, td {
       display: block;
+      width: 100%;
+  }
+
+  .img-docente {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   td:first-child {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: 100px;
+      width: 20%;
   }
   td:not(:first-child) {
       clear: both;
-      margin-left: 100px;
-      padding: 4px 20px 4px 90px;
+      margin-left: 130px;
+      padding: 4px 20px 4px 120px;
       position: relative;
       text-align: left;
+      width: 80%;
   }
   td:not(:first-child):before {
       color: #91ced4;
       content: '';
       display: block;
-      left: 0;
+      left: 10px;
       position: absolute;
   }
   td:nth-child(2):before {
-      content: 'Name:';
+      content: 'Nombre:';
+      color: #012746;
   }
   td:nth-child(3):before {
       content: 'Email:';
+      color: #012746;
   }
   td:nth-child(4):before {
-      content: 'Phone:';
+      content: 'Teléfono:';
+      color: #012746;
   }
   td:nth-child(5):before {
-      content: 'Comments:';
+      content: 'Cargo:';
+      color: #012746;
   }
+
   tr {
       padding: 10px 0;
       position: relative;
+      width: 100%;
   }
   tr:first-child {
       display: none;
   }
 }
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 790px) {
+  .table-users {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 730px) {
   .cargo {
       background-color: transparent;
-      color: white;
+      color: rgb(0, 0, 0);
       font-size: 2em;
       font-weight: 700;
       padding: 0;
@@ -1105,14 +1169,17 @@ svg circle {
       width: 100px;
   }
   td:first-child {
-      background-color: #c8e7ea;
-      border-bottom: 1px solid #91ced4;
-      border-radius: 10px 10px 0 0;
-      position: relative;
-      top: 0;
-      transform: translateY(0);
-      width: 100%;
-  }
+     background-color: #c8e7ea;
+     border-bottom: 1px solid #91ced4;
+     border-radius: 10px 10px 0 0;
+     position: relative;
+     top: 0;
+     transform: translateY(0%);
+     /*transform: translateX(0);
+     *//*margin: auto;
+     */width: 100%;
+
+}
   td:not(:first-child) {
       margin: 0;
       padding: 5px 1em;
@@ -1133,6 +1200,7 @@ svg circle {
       box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
       margin: 0.5rem 0;
       padding: 0;
+      text-align: center;   
   }
   .table-users {
       border: none;
