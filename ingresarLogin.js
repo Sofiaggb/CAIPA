@@ -14,9 +14,11 @@ window.addEventListener("load", function () {
     // Obtener los datos del formulario de registro
     const username = document.getElementById('re-username').value;
     const password = document.getElementById('re-password').value;
+    const codigo = document.getElementById('codigo').value;
 
+    var cod = 'RJ23';
     // Validar los datos (puedes agregar más validaciones según tus necesidades)
-    if (username && password) {
+    if (username && password && codigo === cod) {
       // Almacenar los datos del usuario en el almacenamiento local
       localStorage.setItem('username', username);
       localStorage.setItem('password', password);
