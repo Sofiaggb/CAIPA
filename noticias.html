@@ -1,238 +1,459 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/png" href="assets\image\c&c.png">
-	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets\image\c&c.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>CAIPA</title>
 
-	<title>NOTICIAS</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-<link rel="stylesheet"  href="assets/css/styles.css">
+    <!-- scripst -->
+    <script src="./menu.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <!-- membrete -->
+      <div class="membrete">
+        <img src="assets\image\membrete.jpg" />
+      </div>
 
-<!-- scripst -->
-<script src="./menu.js"></script>
-
-</head>
-<body>
- 
-	<header id="header">
-
-        <!-- membrete -->
-		<div class="membrete">
-			<img src="assets\image\membrete.jpg">
-	  </div>
-
-
-		<div class="center">
-
-      <!-- logo -->
-      <a href="index.html" >
-        <div id="logo" >
+      <div class="center">
+        <!-- logo -->
+        <a href="index.html">
+          <div id="logo">
             <img src="assets\image\logo.jpg" class="app-logo" alt="logotipo" />
             <span id="brand">C.A.I.P.A</span>
+          </div>
+        </a>
+
+        <!-- menu -->
+
+        <nav id="menu">
+          <div class="hamburger-menu" id="hamburger-menu">
+            <i class="bx bx-menu"></i>
+          </div>
+
+          <ul class="main-menu" id="main-menu">
+            <li><a href="principios.html">Filosofia</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li>
+              <a href="login.html"><i class="bx bxs-user"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- limpiar flotados -->
+        <div class="clearfix"></div>
+      </div>
+    </header>
+
+    <!--- contenido --->
+    <div class="content">
+      <h1 class="title2">Niños con Autismo</h1>
+
+      <p>
+        Los trastornos del espectro autista (TEA) son discapacidades del
+        desarrollo causadas por diferencias en el cerebro. Las personas con TEA
+        con frecuencia tienen problemas con la comunicación y la interacción
+        sociales, y conductas o intereses restrictivos o repetitivos.
+      </p>
+      <p>
+        Los niños con trastornos del espectro autista (TEA) a menudo muestran
+        estilos de aprendizaje atípicos, sin embargo, se sabe poco sobre la
+        plasticidad cerebral relacionada con el aprendizaje y su relación con
+        las características fenotípicas clínicas.
+      </p>
+      <p>
+        También es común que demuestren dificultades para identificar señales
+        emocionales.
+      </p>
+      <p>
+        Un equipo de trabajo de la Escuela de Medicina de la Universidad de
+        Stanford, EEUU, ha detectado que esa condición por la que les resulta,
+        en ocasiones, complejo comprender la emocionalidad en las voces de otras
+        personas, se debe a las diferencias en las conexiones y la función de un
+        centro social clave en el cerebro.
+      </p>
+      <br />
+
+      <div class="img-noticias">
+        <img src="assets/image/autismo.jpg" alt="autismo" />
+      </div>
+      <br />
+      <hr />
+
+      <h2 class="title2">Destrezas de comunicación e interacción sociales</h2>
+
+      <p>
+        Algunos ejemplos de características de la comunicación social y de la
+        interacción social relacionadas con los TEA son:
+      </p>
+
+      <ul class="list">
+        <li>
+          Evitar mirar a los ojos a otra persona o no mantener el contacto
+          visual.
+        </li>
+        <li>
+          No responder cuando lo llaman por su nombre, hacia los 9 meses de
+          edad.
+        </li>
+        <li>
+          No mostrar expresiones faciales como de felicidad, tristeza, enojo y
+          sorpresa, hacia los 9 meses de edad.
+        </li>
+        <li>
+          No participar en juegos interactivos simples como dar palmaditas con
+          las manos, hacia los 12 meses de edad.
+        </li>
+        <li>
+          Usar pocos o ningún gesto, hacia los 12 meses de edad (por ejemplo, no
+          decir adiós con la mano).
+        </li>
+        <li>
+          No compartir intereses con otras personas, hacia los 15 meses de edad
+          (por ejemplo, no mostrar un objeto que le guste).
+        </li>
+        <li>
+          No apuntar a algo interesante para mostrarlo, hacia los 18 meses de
+          edad.
+        </li>
+        <li>
+          No notar cuando otras personas están lastimadas o molestas, hacia los
+          24 meses de edad.
+        </li>
+        <li>
+          No notar a otros niños ni jugar con ellos, hacia los 36 meses de edad.
+        </li>
+        <li>
+          No jugar a ser otra cosa, como un maestro o superhéroe, hacia los 48
+          meses de edad.
+        </li>
+        <li>
+          No cantar, bailar ni actuar para usted, hacia los 60 meses de edad.
+        </li>
+      </ul>
+
+      <hr />
+      <h2 class="title2">Datos sobre el Autismo</h2>
+
+      <ol>
+        <li class="subtitle-noticias">
+          Existen otros trastornos que entran en el TEA
+        </li>
+        <p>
+          El síndrome de Asperger, de Rett, trastornos generalizados de
+          desarrollo (PDD NOS) y el trastorno desintegrativo de la infancia o
+          síndrome de Heller también forman parte del espectro autista, y los
+          niveles de sus síntomas varían de intensidad. Por ejemplo, el síndrome
+          de Asperger tiene manifestaciones más sutiles. Como lo indica Autism
+          Society, no existe un retraso clínicamente significativo en el
+          desarrollo cognitivo o en el desarrollo del lenguaje. Las personas que
+          lo padecen son percibidas como distantes, pero en realidad buscan la
+          interacción social, únicamente no saben bien cómo lograrlo.
+        </p>
+        <br />
+
+        <li class="subtitle-noticias">
+          Autismo no es sinónimo de discapacidad intelectual
+        </li>
+        <p>
+          Las capacidades intelectuales de las personas con autismo varían y
+          pueden ir desde “un deterioro profundo hasta la existencia de
+          habilidades cognitivas no verbales superiores”, afirma la Organización
+          Mundial de la Salud (OMS). Alrededor del 50 por ciento de la gente con
+          algún TEA también tiene alguna discapacidad intelectual, pero no es
+          una característica general u obligatoria de los trastornos.
+        </p>
+        <br />
+
+        <li class="subtitle-noticias">
+          Los bebés prematuros corren más riesgo de tener autismo
+        </li>
+        <p>
+          Según un estudio realizado en Suecia, los bebés prematuros tienen una
+          probabilidad alta de padecer autismo junto con el trastorno de déficit
+          de atención e hiperactividad (TDAH). Estiman que el 30 por ciento de
+          niños prematuros puede desarrollarlo, reportó Autismo Diario. Los
+          investigadores creen que la razón de esto es que el cerebro de un bebé
+          se desarrolla mejor dentro del útero, por lo que nacer antes de los 9
+          meses es perjudicial.
+        </p>
+        <br />
+
+        <li class="subtitle-noticias">
+          Muchos niños no son diagnosticados tempranamente
+        </li>
+        <p>
+          El autismo puede ser diagnosticado con certeza de los 18 a los 24
+          meses de edad. Sin embargo, la mayoría de los niños crecen y van a la
+          escuela sin saber que padecen este trastorno, lo que afecta las
+          oportunidades de mejorar considerablemente su desarrollo y
+          habilidades.
+        </p>
+        <br />
+
+        <li class="subtitle-noticias">
+          No existe un estudio de detección médica
+        </li>
+        <p>
+          Al contrario de la prueba prenatal que existe para detectar el
+          síndrome de Down o los análisis sanguíneos del VIH, el autismo no
+          cuenta con un test de este calibre, por lo que es hasta que el niño
+          empieza su desarrollo que los padres pueden notar rasgos extraños en
+          su comportamiento. Los doctores y las organizaciones dedicadas a
+          concientizar sobre el trastorno recomiendan a los padres llevar a sus
+          hijos a un diagnóstico de autismo, si perciben que el niño está
+          teniendo dificultades en el aprendizaje de sus capacidades o
+          interacción social.
+        </p>
+        <br />
+
+        <li class="subtitle-noticias">
+          El autismo no se presenta de la misma forma
+        </li>
+        <p>
+          Un elemento esencial para entender qué es el autismo, es estar
+          conscientes que no es igual en todos los individuos. Si bien existen
+          tres características principales para diagnosticarlo, no significa que
+          cada niño presentará los mismos síntomas o tendrá un mismo nivel de
+          desarrollo. Un niño con autismo puede presentar una capacidad
+          intelectual promedio, y otro puede enfrentar más complicaciones al
+          aprender estas habilidades.
+        </p>
+        <br />
+
+        <li class="subtitle-noticias">
+          El autismo es más común de lo que se cree
+        </li>
+        <p>
+          Quizá decir que el uno por ciento de los niños mexicanos son afectados
+          no suena como una cifra descomunal, pero si recordamos –igual que
+          Michael Rosanoff lo hizo– que hace veinte años se pensaba que el
+          autismo solo lo padecían uno de cada mil, la cifra real de 400 mil
+          niños que viven con autismo es alarmante.
+        </p>
+        <br />
+
+        <li class="subtitle-noticias">
+          El autismo todavía sufre de estigmatización
+        </li>
+        <p>
+          Puede que estemos un paso más adelante y conozcamos más sobre el
+          autismo y sus características, pero muchas personas aún discriminan o
+          estereotipan a aquellos que lo padecen. Esto significa una seria
+          violación a sus derechos humanos. El desconocimiento sobre qué es el
+          autismo y la vergüenza que mucha gente puede sentir al hablar del tema
+          son las causas principales de esta estigmatización. ¿Cómo lo podemos
+          solucionar? Informándonos y discutiendo el trastorno abiertamente.
+        </p>
+        <br />
+
+        <li class="subtitle-noticias">
+          Las personas con autismo pueden ser independientes
+        </li>
+        <p>
+          Creer que la gente que tiene autismo siempre necesitará que alguien lo
+          cuide es un error común. Al igual que las personas con otras
+          necesidades especiales –físicas o intelectuales–, quienes padecen este
+          trastorno también pueden alcanzar una etapa de madurez e
+          independencia. La OMS señala que, mientras algunas personas con
+          autismo u otro trastorno del TEA sí pueden ser autosuficientes, hay
+          otras que tienen discapacidades tan severas que siempre necesitarán
+          atención y apoyo.
+        </p>
+        <br />
+
+        <li class="subtitle-noticias">
+          La intervención temprana mejora el desarrollo de los niños
+        </li>
+        <p>
+          Las terapias y tratamientos ayudan más a un niño que fue diagnosticado
+          tempranamente, que a uno que pasó los cuatro primeros años de su vida
+          sin recibir atención especializada. Los servicios de intervención
+          temprana pueden tratar y enseñar habilidades fundamentales a los niños
+          desde que nacen hasta que cumplen tres años.
+        </p>
+        <br />
+
+        <li class="subtitle-noticias">Actualmente el autismo no tiene cura</li>
+        <p>
+          Es duro saber que un trastorno que afecta a tantas personas aún no
+          tenga cura. El único modo de ayudar a un niño con autismo es llevarlo
+          a terapias, tratamientos o programas educativos especializados. Sin
+          embargo, el deseo de encontrar una cura persiste en la mente de los
+          médicos, quienes continúan investigando cuáles son los posibles
+          causantes del autismo y cómo pueden crear una medicina u algún otro
+          método curativo.
+        </p>
+        <br />
+
+        <li class="subtitle-noticias">
+          El apoyo y el amor de los padres es fundamental
+        </li>
+        <p>
+          Como en cualquier terapia o rehabilitación, recibir el afecto de la
+          familia y los amigos es crucial para la recuperación o, en este caso,
+          el tratamiento del autismo. Los padres pueden apoyar a sus hijos y
+          dispensarles tratamientos psicosociales y conductuales. Asimismo,
+          muchos papás y mamás se han convertido en voceros y activistas para
+          entender el trastorno, exigir que se respeten los derechos de los
+          niños y pedir al gobierno mejores servicios e instalaciones públicas.
+        </p>
+        <br />
+
+        <li class="subtitle-noticias">
+          Los medicamentos se usan para casos graves
+        </li>
+        <p>
+          Es normal que se receten medicinas para tratar o disminuir los
+          síntomas del autismo o un trastorno del TEA, pero debido a los efectos
+          secundarios, se recomienda que únicamente se usen en los casos más
+          severos, de acuerdo con la guía de Effective Health Care Program. Los
+          efectos secundarios de los medicamentos utilizados para tratar el
+          autismo pueden involucrar aumento de peso, sueño excesivo,
+          deshidratación, insuficiencia renal, temblores y movimientos
+          anormales.
+        </p>
+        <br />
+
+        <li class="subtitle-noticias">
+          Los familiares también necesitan recibir terapia
+        </li>
+        <p>
+          Un trastorno o padecimiento no solo afecta a la persona que lo tiene,
+          sino a aquellos que lo rodean. El diagnóstico y tratamiento del
+          autismo no solo conlleva un desgaste económico sino emocional. Acudir
+          con un terapeuta o psicólogo, no culparse y hablar con alguien de
+          confianza son buenas maneras de lidiar con la situación.
+        </p>
+        <br />
+
+        <li class="subtitle-noticias">
+          No se sabe con certeza si el autismo ha aumentado o frenado
+        </li>
+        <p>
+          Autism Speaks señala que se ha dado un incremento en la prevalencia
+          del autismo, pero los investigadores no están seguros si esto se debe
+          a que hay mejores herramientas y diagnósticos para detectarlo y, por
+          ello, se nota un aumento en el número de casos.
+        </p>
+
+        <li class="subtitle-noticias">
+          Ley de autismo en Venezuela y sus propuestas en la inclusión social
+        </li>
+        <p>
+          En primer lugar, se debe tener en cuenta que los Trastornos del
+          Espectro Autista, tienen un origen neurológico y son caracterizados
+          principalmente por alteraciones en algunas áreas del desarrollo de
+          manera general, manifestándose en dificultades severas para
+          interactuar socialmente, comportamientos estereotipados y anomalías
+          comunicativas, además estas personas procesan los estímulos
+          sensoriales de manera distinta.
+        </p>
+        <p>
+          otra parte, cuando se habla en la ley de autismo en Venezuela de las
+          condiciones similares, se hace referencia a aquellos trastornos en el
+          desarrollo neurológico, que causan déficit de atención, a nivel de
+          comunicación social y dificultades específicas del aprendizaje.
+        </p>
+        <p>
+          <a
+            class="enlase"
+            href="https://www.incluyeme.com/ley-de-autismo-en-venezuela-y-sus-propuestas-en-la-inclusion-social/"
+            >Leer mas...</a
+          >
+        </p>
+      </ol>
+    </div>
+
+    <!--::::Pie de Pagina::::::-->
+    <footer>
+      <div class="grupo-1">
+        <div class="contactanos">
+          <h2>CONTÁCTANOS</h2>
+          <p>
+            <strong>Direccion: </strong>Al final de la Av. Principal Villa Olimpica, Urb. Santa
+            Teresa, sector Las Lomas, Parroquia San Juan Bautista, Municipio San
+            Cristobal - Edo Táchira, Venezuela.
+          </p>
+          <p><i class="bx bxs-phone-call"></i> +58 276-3413269</p>
+          <p> <i class='bx bxs-envelope'></i> 1088caipatachira@gmail.com</p>
         </div>
+
+        <div class="red-social">
+          <ul>
+            <li class="icon facebook">
+              <a href="https://www.facebook.com/caipa.tachira/?locale=es_LA">
+                <svg heigth="100" width="100">
+                  <circle
+                    cx="21"
+                    cy="21"
+                    r="20"
+                    stroke="white"
+                    stroke-width="2"
+                    fill="none"
+                  ></circle>
+                </svg>
+                <i class="bx bxl-facebook-circle"></i>
+              </a>
+            </li>
+            <li class="icon twitter">
+              <a href="https://twitter.com/caipatachira?lang=es">
+                <svg heigth="80" width="80">
+                  <circle
+                    cx="21"
+                    cy="21"
+                    r="20"
+                    stroke="white"
+                    stroke-width="2"
+                    fill="none"
+                  ></circle>
+                </svg>
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </li>
+            <li class="icon instagram">
+              <a href="https://www.instagram.com/tachiracaipa/?hl=es-la">
+                <svg heigth="80" width="80">
+                  <circle
+                    cx="21"
+                    cy="21"
+                    r="20"
+                    stroke="white"
+                    stroke-width="2"
+                    fill="none"
+                  ></circle>
+                </svg>
+                <i class="bx bxl-instagram"></i>
+              </a>
+            </li>
+            <li class="icon youtube">
+              <svg heigth="80" width="80">
+                <circle
+                  cx="21"
+                  cy="21"
+                  r="20"
+                  stroke="white"
+                  stroke-width="2"
+                  fill="none"
+                ></circle>
+              </svg>
+              <i class="bx bxl-youtube"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <a class="link-team" href="team.html">
+          <small> Copyright &copy; 2023. Todos los derechos reservados.</small>
       </a>
-
-
-
-            <!-- menu -->
-
-			<nav id="menu">
-
-				<div class="hamburger-menu" id="hamburger-menu">
-				  <i class='bx bx-menu'></i>
-				</div>
-  
-				  <ul class="main-menu" id="main-menu">
-					  <li><a href="principios.html">Filosofia</a></li>
-					  <li><a href="historia.html">Historia</a></li>
-					  <li><a href="#">Organigrama</a></li>
-					  <li><a href="login.html"><i class='bx bxs-user'></i></a></li>
-  
-				  </ul>
-			  </nav>
-			<!-- limpiar flotados -->
-			<div class="clearfix"></div>
-
-		</div>
-	</header>
-
-		<!--- contenido --->
-	<div class="content">
-		<h1 class="title2"> Niños con Autismo</h1>
-
- 		<p>Los trastornos del espectro autista (TEA) son discapacidades del desarrollo causadas por diferencias en el cerebro. Las personas con TEA con frecuencia tienen problemas con la comunicación y la interacción sociales, y conductas o intereses restrictivos o repetitivos.</p>
-		<p>Los niños con trastornos del espectro autista (TEA) a menudo muestran estilos de aprendizaje atípicos, sin embargo, se sabe poco sobre la plasticidad cerebral relacionada con el aprendizaje y su relación con las características fenotípicas clínicas.</p>
-		<p>También es común que demuestren dificultades para identificar señales emocionales.</p>
-		<p>Un equipo de trabajo de la Escuela de Medicina de la Universidad de Stanford, EEUU, ha detectado que esa condición por la que les resulta, en ocasiones, complejo comprender la emocionalidad en las voces de otras personas, se debe a las diferencias en las conexiones y la función de un centro social clave en el cerebro.</p>
-		<br>
-
-		<div class="img-noticias">
-		 	<img src="assets/image/autismo.jpg" alt="autismo">
-		</div>
-		<br>
-		<hr>
-
-		<h2 class="title2">Destrezas de comunicación e interacción sociales</h2>
-		
-		<p>Algunos ejemplos de características de la comunicación social y de la interacción social relacionadas con los TEA son:</p>
-	
-		<ul class="list">	
-			<li>Evitar mirar a los ojos a otra persona o no mantener el contacto visual.</li>
-			<li>No responder cuando lo llaman por su nombre, hacia los 9 meses de edad.</li>
-			<li>No mostrar expresiones faciales como de felicidad, tristeza, enojo y sorpresa, hacia los 9 meses de edad.</li>
-			<li>No participar en juegos interactivos simples como dar palmaditas con las manos, hacia los 12 meses de edad.</li>
-			<li>Usar pocos o ningún gesto, hacia los 12 meses de edad (por ejemplo, no decir adiós con la mano).</li>
-			<li>No compartir intereses con otras personas, hacia los 15 meses de edad (por ejemplo, no mostrar un objeto que le guste).</li>
-			<li>No apuntar a algo interesante para mostrarlo, hacia los 18 meses de edad.</li>
-			<li>No notar cuando otras personas están lastimadas o molestas, hacia los 24 meses de edad.</li>
-			<li>No notar a otros niños ni jugar con ellos, hacia los 36 meses de edad.</li>
-			<li>No jugar a ser otra cosa, como un maestro o superhéroe, hacia los 48 meses de edad.</li>
-			<li>No cantar, bailar ni actuar para usted, hacia los 60 meses de edad.</li>
-		</ul>
-	
-		<hr>
-			<h2 class="title2">Datos sobre el Autismo</h2>
-
-   			<ol>
-   				<li class="subtitle-noticias">Existen otros trastornos que entran en el TEA</li>
-   				<p>El síndrome de Asperger, de Rett, trastornos generalizados de desarrollo (PDD NOS) y el trastorno desintegrativo de la infancia o síndrome de Heller también forman parte del espectro autista, y los niveles de sus síntomas varían de intensidad.
-				Por ejemplo, el síndrome de Asperger tiene manifestaciones más sutiles. Como lo indica Autism Society, no existe un retraso clínicamente significativo en el desarrollo cognitivo o en el desarrollo del lenguaje. Las personas que lo padecen son percibidas como distantes, pero en realidad buscan la interacción social, únicamente no saben bien cómo lograrlo.</p>
-				<br>
-
-				<li class="subtitle-noticias">Autismo no es sinónimo de discapacidad intelectual</li>
-				<p>Las capacidades intelectuales de las personas con autismo varían y pueden ir desde “un deterioro profundo hasta la existencia de habilidades cognitivas no verbales superiores”, afirma la Organización Mundial de la Salud (OMS).
-				Alrededor del 50 por ciento de la gente con algún TEA también tiene alguna discapacidad intelectual, pero no es una característica general u obligatoria de los trastornos.</p>
-				<br>
-				
-				<li class="subtitle-noticias">Los bebés prematuros corren más riesgo de tener autismo</li>
-				<p>Según un estudio realizado en Suecia, los bebés prematuros tienen una probabilidad alta de padecer autismo junto con el trastorno de déficit de atención e hiperactividad (TDAH). Estiman que el 30 por ciento de niños prematuros puede desarrollarlo, reportó Autismo Diario.
-				Los investigadores creen que la razón de esto es que el cerebro de un bebé se desarrolla mejor dentro del útero, por lo que nacer antes de los 9 meses es perjudicial.</p>
-				<br>
-				
-				<li class="subtitle-noticias"> Muchos niños no son diagnosticados tempranamente</li>
-				<p>El autismo puede ser diagnosticado con certeza de los 18 a los 24 meses de edad. Sin embargo, la mayoría de los niños crecen y van a la escuela sin saber que padecen este trastorno, lo que afecta las oportunidades de mejorar considerablemente su desarrollo y habilidades.</p>
-				<br>
-				
-				<li class="subtitle-noticias">No existe un estudio de detección médica</li>
-				<p>Al contrario de la prueba prenatal que existe para detectar el síndrome de Down o los análisis sanguíneos del VIH, el autismo no cuenta con un test de este calibre, por lo que es hasta que el niño empieza su desarrollo que los padres pueden notar rasgos extraños en su comportamiento.
-				Los doctores y las organizaciones dedicadas a concientizar sobre el trastorno recomiendan a los padres llevar a sus hijos a un diagnóstico de autismo, si perciben que el niño está teniendo dificultades en el aprendizaje de sus capacidades o interacción social.</p>
-				<br>
-				
-				<li class="subtitle-noticias">El autismo no se presenta de la misma forma</li>
-				<p>Un elemento esencial para entender qué es el autismo, es estar conscientes que no es igual en todos los individuos. Si bien existen tres características principales para diagnosticarlo, no significa que cada niño presentará los mismos síntomas o tendrá un mismo nivel de desarrollo.
-				Un niño con autismo puede presentar una capacidad intelectual promedio, y otro puede enfrentar más complicaciones al aprender estas habilidades.</p>
-				<br>
-				
-				<li class="subtitle-noticias">El autismo es más común de lo que se cree</li>
-				<p>Quizá decir que el uno por ciento de los niños mexicanos son afectados no suena como una cifra descomunal, pero si recordamos –igual que Michael Rosanoff lo hizo– que hace veinte años se pensaba que el autismo solo lo padecían uno de cada mil, la cifra real de 400 mil niños que viven con autismo es alarmante.</p>
-				<br>
-				
-				<li class="subtitle-noticias">El autismo todavía sufre de estigmatización</li>
-				<p>Puede que estemos un paso más adelante y conozcamos más sobre el autismo y sus características, pero muchas personas aún discriminan o estereotipan a aquellos que lo padecen. Esto significa una seria violación a sus derechos humanos.
-				El desconocimiento sobre qué es el autismo y la vergüenza que mucha gente puede sentir al hablar del tema son las causas principales de esta estigmatización. ¿Cómo lo podemos solucionar? Informándonos y discutiendo el trastorno abiertamente.</p>
-				<br>
-				
-				<li class="subtitle-noticias">Las personas con autismo pueden ser independientes</li>
-				<p>Creer que la gente que tiene autismo siempre necesitará que alguien lo cuide es un error común. Al igual que las personas con otras necesidades especiales –físicas o intelectuales–, quienes padecen este trastorno también pueden alcanzar una etapa de madurez e independencia.
-				La OMS señala que, mientras algunas personas con autismo u otro trastorno del TEA sí pueden ser autosuficientes, hay otras que tienen discapacidades tan severas que siempre necesitarán atención y apoyo.</p>
-				<br>
-				
-				<li class="subtitle-noticias">La intervención temprana mejora el desarrollo de los niños</li>
-				<p>Las terapias y tratamientos ayudan más a un niño que fue diagnosticado tempranamente, que a uno que pasó los cuatro primeros años de su vida sin recibir atención especializada. Los servicios de intervención temprana pueden tratar y enseñar habilidades fundamentales a los niños desde que nacen hasta que cumplen tres años.</p>
-				<br>
-				
-				<li class="subtitle-noticias">Actualmente el autismo no tiene cura</li>
-				<p>Es duro saber que un trastorno que afecta a tantas personas aún no tenga cura. El único modo de ayudar a un niño con autismo es llevarlo a terapias, tratamientos o programas educativos especializados.
-				Sin embargo, el deseo de encontrar una cura persiste en la mente de los médicos, quienes continúan investigando cuáles son los posibles causantes del autismo y cómo pueden crear una medicina u algún otro método curativo.</p>
-				<br>
-				
-				<li class="subtitle-noticias">El apoyo y el amor de los padres es fundamental</li>
-				<p>Como en cualquier terapia o rehabilitación, recibir el afecto de la familia y los amigos es crucial para la recuperación o, en este caso, el tratamiento del autismo.
-				Los padres pueden apoyar a sus hijos y dispensarles tratamientos psicosociales y conductuales. Asimismo, muchos papás y mamás se han convertido en voceros y activistas para entender el trastorno, exigir que se respeten los derechos de los niños y pedir al gobierno mejores servicios e instalaciones públicas.</p>
-				<br>
-				
-				<li class="subtitle-noticias">Los medicamentos se usan para casos graves</li>
-				<p>Es normal que se receten medicinas para tratar o disminuir los síntomas del autismo o un trastorno del TEA, pero debido a los efectos secundarios, se recomienda que únicamente se usen en los casos más severos, de acuerdo con la guía de Effective Health Care Program.
-				Los efectos secundarios de los medicamentos utilizados para tratar el autismo pueden involucrar aumento de peso, sueño excesivo, deshidratación, insuficiencia renal, temblores y movimientos anormales.</p>
-				<br>
-				
-				<li class="subtitle-noticias">Los familiares también necesitan recibir terapia</li>
-				<p>Un trastorno o padecimiento no solo afecta a la persona que lo tiene, sino a aquellos que lo rodean. El diagnóstico y tratamiento del autismo no solo conlleva un desgaste económico sino emocional.
-				Acudir con un terapeuta o psicólogo, no culparse y hablar con alguien de confianza son buenas maneras de lidiar con la situación.</p>
-				<br>
-				
-				<li class="subtitle-noticias">No se sabe con certeza si el autismo ha aumentado o frenado</li>
-				<p>Autism Speaks señala que se ha dado un incremento en la prevalencia del autismo, pero los investigadores no están seguros si esto se debe a que hay mejores herramientas y diagnósticos para detectarlo y, por ello, se nota un aumento en el número de casos.</p>
-
-				<li class="subtitle-noticias">Ley de autismo en Venezuela y sus propuestas en la inclusión social</li>
-				<p>En primer lugar, se debe tener en cuenta que los Trastornos del Espectro Autista, tienen un origen neurológico y son caracterizados principalmente por alteraciones en algunas áreas del desarrollo de manera general, manifestándose en dificultades severas para interactuar socialmente, comportamientos estereotipados y anomalías comunicativas, además estas personas procesan los estímulos sensoriales de manera distinta.</p>
-				<p>otra parte, cuando se habla en la ley de autismo en Venezuela de las condiciones similares, se hace referencia a aquellos trastornos en el desarrollo neurológico, que causan déficit de atención, a nivel de comunicación social y dificultades específicas del aprendizaje.</p>
-					<p> <a class="enlase" href="https://www.incluyeme.com/ley-de-autismo-en-venezuela-y-sus-propuestas-en-la-inclusion-social/">Leer mas...</a></p>
-
-   			</ol>   
- 
-
-		</div>
-
-		<!--::::Pie de Pagina::::::-->
-<footer>
-
-	<div class="grupo-1 ">
-	   
-	   <div class="contactanos">
-			<h2>CONTÁCTANOS</h2>
-			<p><strong>Direccion:</strong> Av. Principal Villa Olimpica, Urb. Santa Teresa, sector Las Lomas, 
-				Parroquia San Juan Bautista, Municipio San Cristobal - Edo Táchira, Venezuela.</p>
-		<p><i class='bx bxs-phone-call' ></i>     +58 276-3413269</p>
-	
-		</div>
-	
-			<div class="red-social">
-				<ul>
-					<li class="icon facebook">
-						<a href="https://www.facebook.com/caipa.tachira/?locale=es_LA">
-							<svg heigth="100" width="100">
-							<circle cx="21" cy="21" r=20 stroke="white" stroke-width="2" fill="none" ></circle>
-						</svg>
-						<i class='bx bxl-facebook-circle'></i>
-					</a>
-					</li>
-					<li class="icon twitter">
-						<a href="https://twitter.com/caipatachira?lang=es">
-						<svg heigth="80" width="80">
-							<circle cx="21" cy="21" r=20 stroke="white" stroke-width="2" fill="none" ></circle>
-						</svg>
-						<i class='bx bxl-twitter' ></i>
-					</a>
-					</li>
-					<li class="icon instagram">
-						<a href="https://www.instagram.com/tachiracaipa/?hl=es-la">
-						<svg heigth="80" width="80">
-							<circle cx="21" cy="21" r=20 stroke="white" stroke-width="2" fill="none" ></circle>
-						</svg>
-						<i class='bx bxl-instagram'></i>
-						</a>
-					</li>
-					<li class="icon youtube">
-						<svg heigth="80" width="80">
-							<circle cx="21" cy="21" r=20 stroke="white" stroke-width="2" fill="none" ></circle>
-						</svg>
-						<i class='bx bxl-youtube'></i>
-					</li>
-				</ul>
-			</div>
-	   
-	</div>
-	<div class="grupo-2">
-		<small>&copy; 2023 
-			<b> Realizado por estudiantes de pnf-informatica. Trayecto 1- UPTAI</b> 
-			- Todos los Derechos Reservados.</small>
-	</div>
-	
-	</footer>
-
-</body>
+      </div>
+    </footer>
+  </body>
 </html>

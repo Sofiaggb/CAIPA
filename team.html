@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,12 +10,11 @@
     />
     <title>CAIPA</title>
 
-    <!-- styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-<!-- scripst -->
-  <script src="./menu.js"></script>
-    <script src="./galeria.js"></script>
+    <!-- scripst -->
+    <script src="./menu.js"></script>
+    <script src="./ingresarLogin.js"></script>
   </head>
   <body>
     <header id="header">
@@ -35,17 +34,17 @@
         <!-- menu -->
 
         <nav id="menu">
-
           <div class="hamburger-menu" id="hamburger-menu">
-            <i class='bx bx-menu'></i>
+            <i class="bx bx-menu"></i>
           </div>
 
-            <ul class="main-menu" id="main-menu">
-                <li><a href="principios.html">Filosofia</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="login.html"><i class='bx bxs-user'></i></a></li>
-
-            </ul>
+          <ul class="main-menu" id="main-menu">
+            <li><a href="principios.html">Filosofia</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li>
+              <a href="login.html"><i class="bx bxs-user"></i></a>
+            </li>
+          </ul>
         </nav>
 
         <!-- limpiar flotados -->
@@ -53,52 +52,79 @@
       </div>
     </header>
 
-    <div class="container">
-      <div class="desc">
-        <div class="tittle">
-          <h1 class="judul">Galeria</h1>
-          <p class="text">
-            Centro de Atención Integral para Personas con Autismo
-          </p>
-        </div>
+   
 
-        <div class="imgsrc">
-          <img src="./assets/image/galeria/galeria6.jpg" class="prev" />
-        </div>
-      </div>
 
-      <div class="thumbnail">
-        <img src="./assets/image/galeria/galeria1.jpg" class="thumb" />
 
-        <img src="./assets/image/galeria/galeria2.jpg" class="thumb" />
+<section>
 
-        <img src="./assets/image/galeria/galeria3.jpg" class="thumb" />
+		<div class="row flex-center ">
 
-        <img src="./assets/image/galeria/galeria4.jpg" class="thumb" />
+			<div class=" col-md-8">
 
-        <img src="./assets/image/galeria/galeria5.jpg" class="thumb" />
+				<ul class="team-members">
+					<!-- single member row starts -->
+					<li class="clearfix">
+					
+						
+						<div class="member-details">
+							<div>
+								<img src="assets/image/team/sofia.png" alt="Sofia">
+							</div>
+              <h3>Sofia Gaitán</h3>
+						</div>
+						
+						<div class="member-details">
+							<h3>Rosmary  González</h3>
+              <div>
+								<img src="assets/image/team/mary2.png" alt="Luisa">
 
-        <img src="./assets/image/galeria/galeria6.jpg" class="thumb" />
+							</div>
+						</div>
+					</li><!-- /single member row ends -->
+					
+					<!-- single member row starts -->
+					<li class="clearfix">
+						<div class="member-details">
+							<div>
+								<img src="assets/image/usuario.png" alt="Gabriel">
 
-        <img src="./assets/image/galeria/galeria7.jpg" class="thumb" />
+							</div>
+              <h3>Gabriel Ángulo</h3>
+						</div>
+						
+						<div class="member-details">
+              <h3>Luisa Muñoz</h3>
+							<div>
+								<img src="assets/image/team/luisa2.png" alt="Mary">
 
-        <img src="./assets/image/galeria/galeria8.jpg" class="thumb" />
+							</div>
+						</div>
+						
+					
+					</li><!-- /single member row ends -->
 
-        <img src="./assets/image/galeria/galeria9.jpg" class="thumb" />
+						
+					</li><!-- /single member row ends -->
 
-        <img src="./assets/image/galeria/galeria10.jpg" class="thumb" />
+				</ul><!-- /end team-photos -->
+			</div><!-- /end col-md-8 -->
+			
+			<div class="col-md-4">
+				<div class="team-overview">
+					<h1 class="title">¿Quiénes Somos?</h1>
 
-        <img src="./assets/image/galeria/galeria11.jpg" class="thumb" />
+					<p>Estudiantes de la Universidad Politécnica Territorial Agro Industrial del Estado Táchira (U.P.T.A.I).
+                       </p><p> Primer Trayecto en Informática.
+                        <br> Cátedra Proyecto Socio Tecnolósgico I.
+                    </p>
+          <p>contáctanos: armorum4@gmail.com</p>
+				</div>
+			</div><!-- /end col-md-4 -->
+		</div><!-- /end row -->
 
-        <img src="./assets/image/galeria/galeria12.jpg" class="thumb" />
+</section>
 
-        <img src="./assets/image/galeria/galeria13.jpg" class="thumb" />
-
-        <img src="./assets/image/galeria/galeria14.jpg" class="thumb" />
-
-        <img src="./assets/image/galeria/galeria15.jpg" class="thumb" />
-      </div>
-    </div>
 
     <!--::::Pie de Pagina::::::-->
     <footer>
@@ -106,7 +132,7 @@
         <div class="contactanos">
           <h2>CONTÁCTANOS</h2>
           <p>
-            <strong>Direccion:</strong> Al final de la Av. Principal Villa Olimpica, Urb. Santa
+            <strong>Direccion: </strong>Al final de la Av. Principal Villa Olimpica, Urb. Santa
             Teresa, sector Las Lomas, Parroquia San Juan Bautista, Municipio San
             Cristobal - Edo Táchira, Venezuela.
           </p>
@@ -178,9 +204,7 @@
         </div>
       </div>
       <div class="grupo-2">
-        <a class="link-team" href="team.html">
-          <small> Copyright &copy; 2023. Todos los derechos reservados.</small>
-      </a>
+        <small> Copyright &copy; 2023. Todos los derechos reservados.</small>
       </div>
     </footer>
   </body>
