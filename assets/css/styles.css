@@ -1228,6 +1228,57 @@ svg circle {
   margin-bottom: 0.5rem;
 }
 
+/* actividades area personal */
+
+.cards_dia_actividades {
+  text-align: left;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 10px;
+}
+
+.card_dia_actividades {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 6px;
+  box-shadow: 5px 5px 20px hsl(229, 6%, 66%);
+  border-radius: 10px;
+}
+
+.card__title_dia_actividades {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.card__description_dia_actividades {
+  color: rgb(43, 43, 43);
+}
+
+.card__supervisor_dia_actividades {
+
+  border-top: 4px solid rgb(0, 9, 139);;
+}
+
+.card__teambuilder_dia_actividades {
+  border-top: 4px solid rgb(6, 213, 240);
+}
+
+.card__karma_dia_actividades {
+  border-top: 4px solid rgb(55, 127, 221);
+}
+
+
+
+span.card__svg_dia_actividades {
+  display: flex;
+  justify-content: end;
+}
+
+
+
 
 
 /* team */
@@ -1305,6 +1356,87 @@ svg circle {
 .flex-center > div:first-child {
 	order: 2;
 }
+
+
+
+/* team 2 pagina principal */
+.contenedor-team-pag-prin{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.person-team2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+.container-team2 {
+  border-radius: 50%;
+  height: 250px;
+  -webkit-tap-highlight-color: transparent;
+  transform: scale(0.38);
+  width: 400px;
+
+}
+
+
+.container-inner-team2 {
+  clip-path: path(
+    "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
+  );
+  position: relative;
+  transform-origin: 50%;
+  top: -180px;
+  width: 50px;
+}
+.circle-team2 {
+  background-color: #68928b;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 380px;
+  left: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 210px;
+  width: 380px;
+}
+.img-team2 {
+  pointer-events: none;  position: relative;
+  transform: translateY(20px) scale(1.15);
+  transform-origin: 50% bottom;
+}
+
+.img1-team2 {
+  left: -2px;
+  top: 200px;
+  width: 350px;
+}
+.img2-team2 {
+  left: 6px;
+  top: 220px;
+  width: 350px;
+}
+.img3-team2 {
+    left: 10px;
+    top: 230px;
+  width: 350px;
+}
+.divider-team2 {
+  background-color: #553fbb;
+  height: 1px;
+  width: 160px;
+}
+.name-team2 {
+  color: #404245;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+
 
 /* RESPONSIVE */
 @media only screen and (max-width : 992px) {
