@@ -10,48 +10,53 @@
       rel="stylesheet"
     />
     <title>CAIPA</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="../assets/css/styles.css" />
 
     <!-- scripst -->
-    <script src="./menu.js"></script>
+    <script src="../scripts/menu.js"></script>
   </head>
   <body>
     <header id="header">
       <!-- membrete -->
       <div class="membrete">
-        <img src="assets\image\membrete.jpg" />
+        <img src="..\assets\image\membrete.png" />
       </div>
+
       <div class="center">
         <!-- logo -->
-        <a href="index.html">
+        <a href="../index.html">
           <div id="logo">
-            <img src="assets\image\logo.jpg" class="app-logo" alt="logotipo" />
+            <img
+              src="..\assets\image\logo.jpg"
+              class="app-logo"
+              alt="logotipo"
+            />
             <span id="brand">C.A.I.P.A</span>
           </div>
         </a>
 
         <!-- menu -->
-
         <nav id="menu">
           <div class="hamburger-menu" id="hamburger-menu">
             <i class="bx bx-menu"></i>
           </div>
 
           <ul class="main-menu" id="main-menu">
-            <li><a href="principios.html">Filosofia</a></li>
-            <li><a href="historia.html">Historia</a></li>
+            <li><a href="./principios.html">Filosofia</a></li>
+            <li><a href="./historia.html">Historia</a></li>
             <li>
-              <a href="login.html"><i class="bx bxs-user"></i></a>
+              <a href="./login.html"><i class="bx bxs-user"></i></a>
             </li>
           </ul>
         </nav>
+
         <!-- limpiar flotados -->
         <div class="clearfix"></div>
       </div>
     </header>
     <!--- contenido --->
     <article class="content article-content">
-      <!-- <h2  class="subtitle">Nuestra</h2> -->
       <h1 class="title2">Nuestra Filosofía</h1>
 
       <div class="punteado">
@@ -265,9 +270,7 @@
         </div>
       </div>
       <div class="grupo-2">
-        <a class="link-team" href="team.html">
           <small> Copyright &copy; 2023. Todos los derechos reservados.</small>
-      </a>
       </div>
     </footer>
   </body>

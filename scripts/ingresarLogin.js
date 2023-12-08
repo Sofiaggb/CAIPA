@@ -17,18 +17,37 @@ window.addEventListener("load", function () {
     const codigo = document.getElementById('codigo').value;
 
     var cod = 'RJ23';
-    // Validar los datos (puedes agregar más validaciones según tus necesidades)
+
+           // Validar el nombre de usuario
+        const usernameValid = /^[a-zA-Z0-9_-]+$/;
+      if (!usernameValid.test(username)) {
+          alert('El nombre de usuario no debe contener caracteres extraños. Solo se permiten letras, números, guiones y guiones bajos.');
+      }
+
+        // Validar la contraseña
+        const passwordValid = /^(?=.*[0-9])(?=.*[a-zA-Z]).{4,}$/;
+      if (!passwordValid.test(password)) {
+          alert('La contraseña debe tener mínimo 4 caracteres y contener al menos un número.');
+      }
+      if(codigo != cod){
+        alert('Para poder registrarse, por favor introduzca el código suministrado')
+    }
+
+    // Validar los datos 
     if (username && password && codigo === cod) {
+
       // Almacenar los datos del usuario en el almacenamiento local
       localStorage.setItem('username', username);
       localStorage.setItem('password', password);
 
       divRegistro.classList.remove('show-register');
-      // alert('Registro exitoso. Ahora puedes iniciar sesión.');
+
       // Limpia los campos del formulario de registro
       document.getElementById('re-username').value = '';
       document.getElementById('re-password').value = '';
-    } else {
+    
+    } 
+    else {
       alert('Por favor, completa todos los campos.');
     }
   });
@@ -39,8 +58,8 @@ window.addEventListener("load", function () {
     event.preventDefault(); // Evitar el envío del formulario por defecto
 
     // Obtener los valores de los campos
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+    let username = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
 
     // Verificar los datos de inicio de sesión
     const storedUsername = localStorage.getItem('username');

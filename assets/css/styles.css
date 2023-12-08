@@ -271,6 +271,8 @@ border-bottom:5px solid rgb(2, 73, 139);
   margin: 0px;
     padding: 0px;
 }
+
+/* noticias sobre el autismo */
  
 .subtitle-noticias{
   font-size: 20px;
@@ -280,28 +282,97 @@ border-bottom:5px solid rgb(2, 73, 139);
   padding: 0px;
 }
 
-.img-noticias {
-  width: 500px;
-  text-align: center;
-  margin: auto;
+.cards-noticias {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content-noticias {
+  border: 5px solid #596cca;
+  border-radius:5px;
+  color: #0c0b0b;
+  flex: 1 1 200px;
+}
+
+.cards-noticias h2 {
+  background-color: #490A3D;
+  margin: 0;
+  padding: 10px;
+}
+
+.content-noticias p {
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 20px;
+  margin: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+/* enlaces noticias articulos */
+
+
+.band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  
+  display: grid;
+  
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  
+}
+.item-enlace{
+  margin-bottom: 1rem;
+}
+
+.card-enlaces-noticias {
+  min-height: 100%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #444;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+}
+
+.card-enlaces-noticias:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.4);
+}
+
+.card-enlaces-noticias  article {
+  padding: 20px;
+  display: flex;
+  
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.card-enlaces-noticias  article h1{
+  font-size: 15px;
+}
+.thumb-enlaces-noticias {
+
+  background-size: cover;
+  background-position: center center;
+}
+.thumb-enlaces-noticias img{
+  width: 100%;
+  height: 100%;
 
 }
- .img-noticias img{
-  width: 100%;
- }
-
- .list li{
-  padding: 5px;
- }
-
- .enlase{
-  color: #444;
-  text-decoration: none;
- }
- .enlase:hover{
-  color: #012441;
- }
-
 
 
 
@@ -419,6 +490,27 @@ border-bottom:5px solid rgb(2, 73, 139);
   text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
   line-height: 1.4;
   word-spacing: 100vw;
+}
+
+/* historia */
+.texto-historia{
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.texto-historia-mos{
+  visibility: visible;
+  position: relative;
+}
+
+#boton{
+  background: white;
+  border: none;
+  padding: 10px;
+  color: #001649;
+  cursor: pointer;
+  font-size: 15px;
 }
 
 /* tarjeta directores */
@@ -745,15 +837,6 @@ svg circle {
 .grupo-2 small{
     font-size: 12px;
 }
-.link-team{
-  text-decoration: none;
-  color: white;
-}
-
-.link-team:hover{
-  text-decoration:underline;
-}
-
 
 .subheader{
     font-size: 36px;
@@ -1279,165 +1362,6 @@ span.card__svg_dia_actividades {
 
 
 
-
-
-/* team */
-.row{
-  margin: 2rem  0;
-  overflow: hidden;
-  padding: 1rem;
-
-}
-.col-md-8{
-  position: relative;
-  width: 50%;
-}
-
-.team-members {
-	transform: rotate(-45deg);
-}
-.team-members li{
-  list-style: none;
-}
-.team-members li > div {
-	float: left;
-	width: 30%;
-}
-
-.team-members li:nth-child(2) > div:first-child {
-	margin-left: 50%;
-}
-
-.team-members li:last-child > div:first-child {
-	margin-left: 30%;
-}
-
-.member-details > div {
-	background-color: #ddd;
-	margin: 5px;
-}
-.member-details img {
-	transform: rotate(45deg) translate(0, 15px) scale(1.2);
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-
-/* hover content - style */
-.member-details > div {
-	position: relative;
-	overflow: hidden;
-}
-
-
-/* Team overview */
-.col-md-4{
-  width: 30%;
-}
-.team-overview {
-	padding-right: 15px;
-
-}
-.team-overview h2 {
-	text-transform: uppercase;
-	font-size: 22px;
-	font-weight: 700;
-	margin-bottom: 5px;
-}
-
-/* For centering elements - optional - Can use table,tablecell instead */
-.flex-center {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
-.flex-center > div:first-child {
-	order: 2;
-}
-
-
-
-/* team 2 pagina principal */
-.contenedor-team-pag-prin{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-.person-team2 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-}
-.container-team2 {
-  border-radius: 50%;
-  height: 250px;
-  -webkit-tap-highlight-color: transparent;
-  transform: scale(0.38);
-  width: 400px;
-
-}
-
-
-.container-inner-team2 {
-  clip-path: path(
-    "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
-  );
-  position: relative;
-  transform-origin: 50%;
-  top: -180px;
-  width: 50px;
-}
-.circle-team2 {
-  background-color: #68928b;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 380px;
-  left: 10px;
-  pointer-events: none;
-  position: absolute;
-  top: 210px;
-  width: 380px;
-}
-.img-team2 {
-  pointer-events: none;  position: relative;
-  transform: translateY(20px) scale(1.15);
-  transform-origin: 50% bottom;
-}
-
-.img1-team2 {
-  left: -2px;
-  top: 200px;
-  width: 350px;
-}
-.img2-team2 {
-  left: 6px;
-  top: 220px;
-  width: 350px;
-}
-.img3-team2 {
-    left: 10px;
-    top: 230px;
-  width: 350px;
-}
-.divider-team2 {
-  background-color: #553fbb;
-  height: 1px;
-  width: 160px;
-}
-.name-team2 {
-  color: #404245;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-}
-
-
-
 /* RESPONSIVE */
 @media only screen and (max-width : 992px) {
 	.sm-no-flex {
@@ -1452,17 +1376,19 @@ span.card__svg_dia_actividades {
 }
 
 
-
-
-
-
-
 /* RESPONSIVE */
 @media(max-width:1310px) {
   /* tamaño letra correos personal */
   .xxss{
     font-size: 12px;
   }
+
+  /* videos historia */
+  .video{
+    width: 40%;
+  }
+
+
 }
 
 @media(max-width:1240px){
@@ -1485,11 +1411,6 @@ span.card__svg_dia_actividades {
   .wrapper {
     margin-bottom: 1rem;
   }
-
-  /* team */
-  .row {
-    margin: 1rem;
-  }
 }
 @media(max-width: 1212px){
   #menu{
@@ -1499,6 +1420,18 @@ span.card__svg_dia_actividades {
   /* contenido */
   .subtitle{
     font-size: 25px;
+  }
+}
+@media(max-width: 1172px){
+
+  /* tarjetas noticias destrezas comunicacion */
+  .grid {
+    grid-template-columns: repeat(4,1fr);
+  }
+
+/* tarjetas noticias enlaces */
+  .band {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -1548,6 +1481,20 @@ span.card__svg_dia_actividades {
   .desc{
     height: 40%;
   }
+        /* videos historia */
+        .video{
+          width: 100%;
+        }
+      
+  }
+
+  @media(max-width: 920px){
+
+    /* tarjetas noticias destrezas comunicacion */
+    .grid {
+      grid-template-columns: repeat(3,1fr);
+    }
+  
   }
 
 @media(max-width:906px){
@@ -1572,21 +1519,6 @@ span.card__svg_dia_actividades {
   .xxss{
     font-size: 12px;
   }
-
-  /*  team */
-  .flex-center {
-    margin: 1rem auto;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-  }
-  .col-md-4 {
-    width: 100%;
-  }
-  .col-md-8 {
-    width: 80%;
-  }
 }
 @media(max-width: 864px){
   #logo{
@@ -1600,6 +1532,8 @@ span.card__svg_dia_actividades {
   .content{
     width: 80%;
   }
+
+
 }
 
 @media (max-width: 823px){
@@ -1650,13 +1584,13 @@ background: #aaccff;
   transform: translateY(0);
 }
 
+
 }
 
 
 @media(max-width:814px){
     #logo{
         float: none;
-        /* width: 240px; */
         margin: auto;
         margin-top: 20px;
     }
@@ -1715,7 +1649,6 @@ background: #aaccff;
 }
 
 
-
 }
 
 @media(max-width: 774px){
@@ -1725,6 +1658,13 @@ background: #aaccff;
     grid-template-columns: 1fr ;
     padding: 1rem 7rem;
   }
+
+
+  /* tarjetas noticias enlaces */
+    .band {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
 }
 
 @media(max-width: 756px){
@@ -1788,9 +1728,6 @@ background: #aaccff;
     font-size: 40px;
   }
 
-  .img-noticias {
-    width: 400px;
-  }
 
 }
 @media(max-width: 608px){
@@ -1802,6 +1739,17 @@ background: #aaccff;
   .scrollbar {
     height: 220px;
   }
+
+    /* tarjetas noticias destrezas comunicacion */
+    .grid {
+      grid-template-columns: repeat(2,1fr);
+    }
+  
+  /* tarjetas noticias enlaces */
+    .band {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
 }
 
 @media(max-width:546px){
@@ -1863,24 +1811,11 @@ background: #aaccff;
     .thumb {
       width: 25%;
     }
-
-    /* team */
-    .member-details {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
-    }
-    
-
 }
 @media(max-width: 500px){
-
-  .img-noticias {
-    width: 300px;
-  }
-
     .contenedor-videos{
       width: 350px;
     }
-  
 }
 
 @media(max-width:450px) {
@@ -1928,6 +1863,17 @@ background: #aaccff;
       left: 20rem;
     }
 
+
+      /* tarjetas noticias destrezas comunicacion */
+      .grid {
+        grid-template-columns: repeat(1,1fr);
+      }
+    
+    /* tarjetas noticias enlaces */
+      .band {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    
 }
 
 @media(max-width: 400px){
@@ -1937,17 +1883,11 @@ background: #aaccff;
 }
 
 @media(max-width:372px){
-
-     .img-noticias {
-      width: 250px;
-    }
-
      /* menu */
      #menu a{
       padding-left: 80px;
       padding-right: 80px;
     }
-
     /* galeria */
     .thumb {
       height: 100px;
